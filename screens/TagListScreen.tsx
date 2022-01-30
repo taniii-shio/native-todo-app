@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTailwind } from 'tailwind-rn/dist';
+import tw from 'tailwind-rn';
 import { SafeAreaView, Text, Alert } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -10,7 +10,6 @@ import { IconButton } from '../components/IconButton';
 export const TagListScreen = () => {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
-  const tw = useTailwind();
 
   const signOut = async () => {
     try {

@@ -1,5 +1,5 @@
 import React, { VFC } from 'react';
-import { useTailwind } from 'tailwind-rn';
+import tw from 'tailwind-rn';
 import { SafeAreaView, ActivityIndicator } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
@@ -9,7 +9,6 @@ import { useAuthState } from '../hooks/useAuthState';
 
 export const RootNavigator: VFC = () => {
   const { user, isLoading } = useAuthState();
-  const tw = useTailwind();
 
   if (isLoading) {
     return (

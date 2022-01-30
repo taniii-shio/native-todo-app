@@ -1,5 +1,5 @@
 import React, { VFC } from 'react';
-import { useTailwind } from 'tailwind-rn';
+import tw from 'tailwind-rn';
 import { View, Text } from 'react-native';
 
 type Props = {
@@ -8,7 +8,6 @@ type Props = {
 };
 
 export const Title: VFC<Props> = ({ first, last }) => {
-  const tw = useTailwind();
   return (
     <View style={tw('flex-row my-6 px-1')}>
       <View

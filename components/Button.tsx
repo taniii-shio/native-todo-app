@@ -1,5 +1,5 @@
 import React, { VFC } from 'react';
-import { useTailwind } from 'tailwind-rn';
+import tw from 'tailwind-rn';
 import { TouchableOpacity, Text, GestureResponderEvent } from 'react-native';
 
 type Props = {
@@ -15,8 +15,6 @@ export const Button: VFC<Props> = ({
   titleColor = 'text-white',
   onPress,
 }) => {
-  const tw = useTailwind();
-
   return (
     <TouchableOpacity
       style={tw(`mb-4 mx-3 rounded-3xl w-11/12 ${bgColor}`)}

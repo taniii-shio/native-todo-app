@@ -1,5 +1,5 @@
 import React, { VFC } from 'react';
-import { useTailwind } from 'tailwind-rn';
+import tw from 'tailwind-rn';
 import { View, TextInput } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
@@ -28,7 +28,6 @@ export const InputField: VFC<Props> = ({
   value,
   onChangeText,
 }) => {
-  const tw = useTailwind();
   return (
     <View style={tw('mb-5 mx-3 flex-row p-3 w-11/12 bg-white rounded')}>
       {leftIcon ? (

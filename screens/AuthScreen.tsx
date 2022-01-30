@@ -1,5 +1,5 @@
 import React, { VFC } from 'react';
-import { useTailwind } from 'tailwind-rn';
+import tw from 'tailwind-rn';
 import { Text, SafeAreaView } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { useFirebaseAuth } from '../hooks/useFirebaseAuth';
@@ -8,8 +8,6 @@ import { InputField } from '../components/InputField';
 import { IconButton } from '../components/IconButton';
 
 export const AuthScreen: VFC = () => {
-  const tw = useTailwind();
-
   const {
     isLogin,
     email,
